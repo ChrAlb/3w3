@@ -1,4 +1,5 @@
-Intro media/Textures/intro.png
+Intro media/Textures/Start.png
+
 PlayerSprite media/Textures/PlayerSheet.png
 RatSprite media/Textures/RatSheet.png
 TileSheet media/Textures/tilesheet.png

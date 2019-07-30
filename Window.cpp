@@ -1,7 +1,7 @@
 #include "Window.h"
 
 Window::Window(){ 
-	Setup("Mario", sf::Vector2u(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
+	Setup("3w3", sf::Vector2u(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
 }
 
 Window::Window(const std::string& title, const sf::Vector2u& size){ 

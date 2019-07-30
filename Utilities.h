@@ -16,7 +16,7 @@ namespace Utils{
 			//GetModuleFileName(hModule,path,sizeof(path));
 			
 			//PathRemoveFileSpec(path);			
-			strcat_s(path, "c:\\Users\\albch\\Documents\\GitHub\\MarioGame\\Kapitel7\\MarioGame\\MarioGame");
+			strcat_s(path, "c:\\Users\\albch\\Documents\\GitHub\\3w3\\3w3");
 			strcat_s(path,"\\");
 			return std::string(path);
 		}
