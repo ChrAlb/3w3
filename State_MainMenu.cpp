@@ -7,6 +7,18 @@ State_MainMenu::State_MainMenu(StateManager* l_stateManager)
 State_MainMenu::~State_MainMenu(){}
 
 void State_MainMenu::OnCreate(){
+
+	sf::Vector2u windowSize = m_stateMgr->GetContext()
+		->m_wind->GetRenderWindow()->getSize();
+
+	TextureManager* textureMgr = m_stateMgr->GetContext()->m_textureManager;
+	textureMgr->RequireResource("BgMenu");
+	m_bgSprite.setTexture(*textureMgr->GetResource("BgMenu"));
+	m_bgSprite.setOrigin(textureMgr->GetResource("BgMenu")->getSize().x / 2.0f,
+		textureMgr->GetResource("Intro")->getSize().y / 2.0f);
+
+	m_bgSprite.setPosition(windowSize.x / 2.0f, windowSize.y / 2.0f);
+
 	m_font.loadFromFile(Utils::GetWorkingDirectory() + "media/Fonts/arial.ttf");
 	m_text.setFont(m_font);
 	m_text.setString(sf::String("MAIN MENU:"));
@@ -56,9 +68,14 @@ void State_MainMenu::OnCreate(){
 }
 
 void State_MainMenu::OnDestroy(){
+	
+	TextureManager* textureMgr = m_stateMgr->GetContext()->m_textureManager;
+	textureMgr->ReleaseResource("BgMenu");
+	
 	EventManager* evMgr = m_stateMgr->
 		GetContext()->m_eventManager;
 	evMgr->RemoveCallback(StateType::MainMenu, "Mouse_Left");
+
 }
 
 void State_MainMenu::Activate(){
@@ -101,6 +118,7 @@ void State_MainMenu::MouseClick(EventDetails* l_details){
 void State_MainMenu::Draw(){
 	sf::RenderWindow* window = m_stateMgr->
 		GetContext()->m_wind->GetRenderWindow();
+	window->draw(m_bgSprite);
 	window->draw(m_text);
 	for(int i = 0; i < 3; ++i){
 		window->draw(m_rects[i]);

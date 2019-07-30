@@ -20,6 +20,7 @@ public:
 private:
 	sf::Font m_font;
 	sf::Text m_text;
+	sf::Sprite m_bgSprite;
 
 	sf::Vector2f m_buttonSize;
 	sf::Vector2f m_buttonPos;
