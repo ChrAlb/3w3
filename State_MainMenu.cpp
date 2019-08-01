@@ -36,7 +36,7 @@ void State_MainMenu::OnCreate(){
 
 	std::string str[3];
 	str[0] = "PLAY";
-	str[1] = "CREDITS";
+	str[1] = "Tools";
 	str[2] = "EXIT";
 
 	for(int i = 0; i < 3; ++i){
@@ -107,7 +107,7 @@ void State_MainMenu::MouseClick(EventDetails* l_details){
 			if(i == 0){
 				m_stateMgr->SwitchTo(StateType::Game);
 			} else if(i == 1){
-				// Credits state.
+				m_stateMgr->SwitchTo(StateType::Tool);
 			} else if(i == 2){
 				m_stateMgr->GetContext()->m_wind->Close();
 			}

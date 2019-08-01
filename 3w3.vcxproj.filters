@@ -72,6 +72,9 @@
     <ClCompile Include="Window.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="State_Tool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Anim_Base.h">
@@ -149,5 +152,30 @@
     <ClInclude Include="Window.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="State_Tool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\Maps\map1.map">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Maps\map2.map">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Spritesheets\Player.sheet">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="keys.cfg.txt">
+      <Filter>Ressourcendateien</Filter>
+    </Text>
+    <Text Include="textures.cfg.txt">
+      <Filter>Ressourcendateien</Filter>
+    </Text>
+    <Text Include="tiles.cfg.txt">
+      <Filter>Ressourcendateien</Filter>
+    </Text>
   </ItemGroup>
 </Project>

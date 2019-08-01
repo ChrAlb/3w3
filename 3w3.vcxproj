@@ -175,6 +175,7 @@
     <ClCompile Include="State_Intro.cpp" />
     <ClCompile Include="State_MainMenu.cpp" />
     <ClCompile Include="State_Paused.cpp" />
+    <ClCompile Include="State_Tool.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -200,9 +201,20 @@
     <ClInclude Include="State_Intro.h" />
     <ClInclude Include="State_MainMenu.h" />
     <ClInclude Include="State_Paused.h" />
+    <ClInclude Include="State_Tool.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\Maps\map1.map" />
+    <None Include="media\Maps\map2.map" />
+    <None Include="media\Spritesheets\Player.sheet" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="keys.cfg.txt" />
+    <Text Include="textures.cfg.txt" />
+    <Text Include="tiles.cfg.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
