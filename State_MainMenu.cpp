@@ -36,7 +36,7 @@ void State_MainMenu::OnCreate(){
 
 	std::string str[3];
 	str[0] = "PLAY";
-	str[1] = "Tools";
+	str[1] = "TOOLS";
 	str[2] = "EXIT";
 
 	for(int i = 0; i < 3; ++i){

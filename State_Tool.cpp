@@ -12,8 +12,8 @@ void State_Tool::OnCreate() {
 
 
 	EventManager* evMgr = m_stateMgr->GetContext()->m_eventManager;
-	evMgr->AddCallback(StateType::Tool, "", &State_Tool::F1, this);
-	evMgr->AddCallback(StateType::Tool, "", &State_Tool::F2, this);
+	evMgr->AddCallback(StateType::Tool, "ToolExit", &State_Tool::Toolexit, this);
+	evMgr->AddCallback(StateType::Tool, "Tool1", &State_Tool::Tools1, this);
 }
 
 void State_Tool::OnDestroy() {
@@ -21,24 +21,25 @@ void State_Tool::OnDestroy() {
 
 	EventManager* evMgr = m_stateMgr->GetContext()->m_eventManager;
 	
-	evMgr->RemoveCallback(StateType::Tool, "F1");
-	evMgr->RemoveCallback(StateType::Tool, "F2");
+	evMgr->RemoveCallback(StateType::Tool, "Toolexit");
+	evMgr->RemoveCallback(StateType::Tool, "Tool1");
 }
 
 void State_Tool::Draw() {
 	sf::RenderWindow* window = m_stateMgr->
 		GetContext()->m_wind->GetRenderWindow();
 
-	window->draw(m_introSprite);
+	window->draw(m_text);
 }
 
-void State_Tool::F1(EventDetails* l_details)
+void State_Tool::Toolexit(EventDetails* l_details)
 {
+
 	m_stateMgr->SwitchTo(StateType::MainMenu);
 	m_stateMgr->Remove(StateType::Tool);
 }
 
-void State_Tool::F2(EventDetails* l_details)
+void State_Tool::Tools1(EventDetails* l_details)
 {
 
 }

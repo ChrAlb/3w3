@@ -16,10 +16,11 @@ public:
 	void Update(const sf::Time& l_time);
 	void Draw();
 
-	void F1(EventDetails* l_details);
-	void F2(EventDetails* l_details);
+	void Toolexit(EventDetails* l_details);
+	void Tools1(EventDetails* l_details);
 
 private:
 	sf::Sprite m_introSprite;
 	sf::Font m_font;
+	sf::Text m_text;
 };
