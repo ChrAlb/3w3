@@ -39,11 +39,54 @@ void State_Tool::Toolexit(EventDetails* l_details)
 	m_stateMgr->Remove(StateType::Tool);
 }
 
+
+// Tool1 = Macht Sheet aus Tiles
 void State_Tool::Tools1(EventDetails* l_details)
 {
+	TileSize = 256;
+	BrickCounter = 1;
 
+	DestFName = "C:\\Test\\tilesheet2048.png";
+
+
+	
+	if (!DestinationFile.loadFromFile(DestFName));
+	{
+		printf("Error DestFile");
+
+	}
+	
+	for(i=0;i<7;i++)
+		for (j = 0; j < 7; j++)
+		{
+			if ((i == 0) && (j == 0))
+				;
+			else
+			{
+				std::string name;
+				name = "C:\\Test\\Brick (" ;
+
+				std::stringstream ss;
+				ss << BrickCounter;
+				std::string str = ss.str();
+				name = name + str + ").png";
+
+				SourceFName = name;
+
+				if (!SourceFiles.loadFromFile(SourceFName))
+				{
+					printf("Error SourceFile");
+				}
+
+				DestinationFile.copy(SourceFiles, (i + 1) * TileSize, j * TileSize, { 0,0,TileSize,TileSize }, false);
+				BrickCounter++;
+
+			}
+
+			
+		}
+	DestinationFile.saveToFile(DestFName);
 }
-
 
 void State_Tool::Update(const sf::Time& l_time) {}
 void State_Tool::Activate() {}

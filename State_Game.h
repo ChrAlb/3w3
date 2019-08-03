@@ -22,4 +22,5 @@ public:
 	void ToggleOverlay(EventDetails* l_details);
 private:
 	Map* m_gameMap;
+
 };
