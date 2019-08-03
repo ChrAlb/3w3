@@ -56,10 +56,14 @@ void State_Tool::Tools1(EventDetails* l_details)
 
 	}
 	
-	for(i=0;i<7;i++)
-		for (j = 0; j < 7; j++)
+	for(i=0;i<8;i++)
+		for (j = 0; j < 8; j++)
 		{
-			if ((i == 0) && (j == 0))
+			if (
+				(i == 0) || 
+				
+				( (j == 0) && (i==1 ))
+				)
 				;
 			else
 			{
@@ -78,7 +82,7 @@ void State_Tool::Tools1(EventDetails* l_details)
 					printf("Error SourceFile");
 				}
 
-				DestinationFile.copy(SourceFiles, (i + 1) * TileSize, j * TileSize, { 0,0,TileSize,TileSize }, false);
+				DestinationFile.copy(SourceFiles, (j) * TileSize, (i) * TileSize, { 0,0,TileSize,TileSize }, false);
 				BrickCounter++;
 
 			}
