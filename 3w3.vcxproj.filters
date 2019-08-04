@@ -178,4 +178,9 @@
       <Filter>Ressourcendateien</Filter>
     </Text>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="media\Textures\tilesheet.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
