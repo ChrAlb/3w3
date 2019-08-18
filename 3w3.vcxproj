@@ -207,6 +207,7 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="media\Characters\Player.char" />
     <None Include="media\Maps\map1.map" />
     <None Include="media\Maps\map2.map" />
     <None Include="media\Spritesheets\Player.sheet" />
@@ -217,6 +218,8 @@
     <Text Include="tiles.cfg.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="media\Textures\PlayerSheet.png" />
+    <Image Include="media\Textures\Start.png" />
     <Image Include="media\Textures\tilesheet.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

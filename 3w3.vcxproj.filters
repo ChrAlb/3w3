@@ -166,6 +166,9 @@
     <None Include="media\Spritesheets\Player.sheet">
       <Filter>Ressourcendateien</Filter>
     </None>
+    <None Include="media\Characters\Player.char">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="keys.cfg.txt">
@@ -180,6 +183,12 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="media\Textures\tilesheet.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="media\Textures\Start.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="media\Textures\PlayerSheet.png">
       <Filter>Ressourcendateien</Filter>
     </Image>
   </ItemGroup>
