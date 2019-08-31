@@ -9,7 +9,7 @@
 #include "SharedContext.h"
 #include "BaseState.h"
 
-enum Sheet{ Tile_Size = 32, Sheet_Width = 256, Sheet_Height = 256 };
+enum Sheet{ Tile_Size = 50, Sheet_Width = 400, Sheet_Height = 400 };
 
 using TileID = unsigned int;
 

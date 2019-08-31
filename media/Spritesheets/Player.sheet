@@ -1,5 +1,5 @@
 Texture PlayerSprite
-Size 38 48
+Size 80 100
 Scale 1.0 1.0
 |Type|Name|StartFrame|EndFrame|Row|FrameTime|FrameActionStart|FrameActionEnd|
 AnimationType Directional
@@ -7,5 +7,5 @@ Animation Idle 0 1 0 10 -1 -1
 Animation Walk 0 3 0 0.1 -1 -1
 Animation Jump 0 8 2 0.2 -1 -1
 Animation Attack 0 4 6 0.08 2 3
-Animation Hurt 0 2 8 0.2 -1 -1
-Animation Death 0 1 5 10 -1 -1
+Animation Hurt 0 2 6 0.2 -1 -1
+Animation Death 0 1 6 10 -1 -1
