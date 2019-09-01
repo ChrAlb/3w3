@@ -17,7 +17,7 @@ void State_Game::OnCreate(){
 	sf::Vector2u size = m_stateMgr->GetContext()->m_wind->GetWindowSize();
 	m_view.setSize(size.x,size.y);
 	m_view.setCenter(size.x/2,size.y/2);
-	m_view.zoom(0.6f);
+	m_view.zoom(1);
 	m_stateMgr->GetContext()->m_wind->GetRenderWindow()->setView(m_view);
 
 	m_gameMap = new Map(m_stateMgr->GetContext(), this);
