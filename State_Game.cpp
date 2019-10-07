@@ -45,10 +45,12 @@ void State_Game::Update(const sf::Time& l_time){
 		player->SetPosition(m_gameMap->GetPlayerStart());
 	} else {
 		// View nicht Center Player
-		//m_view.reset(sf::FloatRect(0, 0, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
-		m_view.setCenter(player->GetPosition());
+		m_view.reset(sf::FloatRect(0, 0, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
+		//m_view.setCenter(player->GetPosition());
 		context->m_wind->GetRenderWindow()->setView(m_view);
 	}
+
+	
 
 	sf::FloatRect viewSpace = context->m_wind->GetViewSpace();
 	if(viewSpace.left <= 0){
