@@ -57,7 +57,7 @@ void State_Game::Update(const sf::Time& l_time){
 		}
 		else
 		{
-			m_view.move(50, 50);
+			m_view.move(100,0);
 			//view.move( (player->GetPosition().x - player->GetOldPosistion().x),0);
 		}
 
