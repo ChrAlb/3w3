@@ -43,10 +43,24 @@ void State_Game::Update(const sf::Time& l_time){
 		context->m_entityManager->Add(EntityType::Player,"Player");
 		player = context->m_entityManager->Find("Player");
 		player->SetPosition(m_gameMap->GetPlayerStart());
-	} else {
+	} else 
+	
+	{
 		// View nicht Center Player
 		m_view.reset(sf::FloatRect(0, 0, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
 		//m_view.setCenter(player->GetPosition());
+
+		if (  (player->GetPosition()==player->GetOldPosistion()) || (player->GetPosition().x < sf::VideoMode::getDesktopMode().width/2)    )
+		{
+			m_view.move(0,0);
+			
+		}
+		else
+		{
+			m_view.move(50, 50);
+			//view.move( (player->GetPosition().x - player->GetOldPosistion().x),0);
+		}
+
 		context->m_wind->GetRenderWindow()->setView(m_view);
 	}
 
@@ -60,6 +74,10 @@ void State_Game::Update(const sf::Time& l_time){
 		m_view.setCenter(((m_gameMap->GetMapSize().x + 1) * Sheet::Tile_Size) - (viewSpace.width / 2), m_view.getCenter().y);
 		context->m_wind->GetRenderWindow()->setView(m_view);
 	}
+
+
+
+
 
 	m_gameMap->Update(l_time.asSeconds());
 	m_stateMgr->GetContext()->m_entityManager->Update(l_time.asSeconds());

@@ -44,7 +44,8 @@ std::string EntityBase::GetName()const{ return m_name; }
 EntityState EntityBase::GetState()const{ return m_state; }
 unsigned int EntityBase::GetId()const{ return m_id; }
 EntityType EntityBase::GetType()const{ return m_type; }
-const sf::Vector2f& EntityBase::GetPosition()const{ return m_position; }
+sf::Vector2f& EntityBase::GetPosition() { return m_position; }
+sf::Vector2f& EntityBase::GetOldPosistion()  {return m_positionOld;}
 
 void EntityBase::Move(float l_x, float l_y){
 	m_positionOld = m_position;

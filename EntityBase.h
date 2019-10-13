@@ -28,7 +28,8 @@ public:
 	EntityBase(EntityManager* l_entityMgr);
 	virtual ~EntityBase();
 
-	const sf::Vector2f& GetPosition()const;
+	sf::Vector2f& GetPosition();
+	sf::Vector2f& GetOldPosistion();
 	const sf::Vector2f& GetSize()const;
 	EntityState GetState()const;
 	std::string GetName()const;
