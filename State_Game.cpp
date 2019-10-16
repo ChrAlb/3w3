@@ -38,7 +38,9 @@ void State_Game::OnDestroy(){
 void State_Game::Update(const sf::Time& l_time){
 	SharedContext* context = m_stateMgr->GetContext();
 	EntityBase* player = context->m_entityManager->Find("Player");
-	if(!player){
+	
+	if(!player)
+	{
 		std::cout << "Respawning player..." << std::endl;
 		context->m_entityManager->Add(EntityType::Player,"Player");
 		player = context->m_entityManager->Find("Player");
@@ -46,10 +48,7 @@ void State_Game::Update(const sf::Time& l_time){
 	} else 
 	
 	{
-		// View nicht Center Player
-		m_view.reset(sf::FloatRect(0, 0, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
-		//m_view.setCenter(player->GetPosition());
-
+		
 		if (  (player->GetPosition()==player->GetOldPosistion()) || (player->GetPosition().x < sf::VideoMode::getDesktopMode().width/2)    )
 		{
 			m_view.move(0,0);
@@ -57,15 +56,18 @@ void State_Game::Update(const sf::Time& l_time){
 		}
 		else
 		{
-			m_view.move(100,0);
-			//view.move( (player->GetPosition().x - player->GetOldPosistion().x),0);
+			sf::Vector2f a,b;
+			a = player->GetPosition();
+			b = player->GetOldPosistion();
+
+			m_view.move(0,a.y-b.y);
+			
 		}
 
 		context->m_wind->GetRenderWindow()->setView(m_view);
 	}
 
 	
-
 	sf::FloatRect viewSpace = context->m_wind->GetViewSpace();
 	if(viewSpace.left <= 0){
 		m_view.setCenter(viewSpace.width / 2,m_view.getCenter().y);
