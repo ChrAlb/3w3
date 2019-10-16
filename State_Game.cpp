@@ -49,6 +49,15 @@ void State_Game::Update(const sf::Time& l_time){
 	
 	{
 		
+		sf::Vector2f a, b;
+		a = player->GetPosition();
+		b = player->GetOldPosistion();
+		std::cout << a.x;
+		std::cout << '\n';
+		std::cout << b.x;
+		std::cout << '\n';
+		std::cout << '\n';
+
 		if (  (player->GetPosition()==player->GetOldPosistion()) || (player->GetPosition().x < sf::VideoMode::getDesktopMode().width/2)    )
 		{
 			m_view.move(0,0);
@@ -56,11 +65,8 @@ void State_Game::Update(const sf::Time& l_time){
 		}
 		else
 		{
-			sf::Vector2f a,b;
-			a = player->GetPosition();
-			b = player->GetOldPosistion();
-
-			m_view.move(0,a.y-b.y);
+			
+			m_view.move(a.x-b.x,0);
 			
 		}
 
