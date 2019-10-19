@@ -48,8 +48,20 @@ const sf::Vector2f& EntityBase::GetPosition() const { return m_position; }
 const sf::Vector2f& EntityBase::GetOldPosistion() const {return m_positionOld;}
 
 void EntityBase::Move(float l_x, float l_y){
-	m_positionOld = m_position;
+	
+	if (l_x != 0  && l_y != 0)
+	    m_positionOld = m_position;
 	m_position += sf::Vector2f(l_x,l_y);
+	
+	/* Debug
+	std::cout << "new:  ";
+	std::cout << m_position.x;
+	std::cout << '\n';
+	std::cout << "old:  ";
+	std::cout << m_positionOld.x;
+	std::cout << '\n';
+	std::cout << '\n';
+	*/
 	sf::Vector2u mapSize = m_entityManager->GetContext()->m_gameMap->GetMapSize();
 	if(m_position.x < 0){
 		m_position.x = 0;
