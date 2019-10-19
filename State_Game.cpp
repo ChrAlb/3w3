@@ -59,16 +59,13 @@ void State_Game::Update(const sf::Time& l_time){
 		std::cout << '\n';
 		std::cout << '\n';
 		*/
-		if (  (player->GetPosition()==player->GetOldPosistion()) || (player->GetPosition().x < sf::VideoMode::getDesktopMode().width/2)    )
-		{
-			m_view.move(0,0);
-			
+		if (  (player->GetPosition().x < sf::VideoMode::getDesktopMode().width/2)  || (player->GetPosition().x > (m_gameMap->GetMapSize().x - (sf::VideoMode::getDesktopMode().width / 2)))  )
+        {
+		m_view.move(0,0);	
 		}
 		else
 		{
-			
-			m_view.move(a.x-b.x,0);
-			
+		 m_view.move(a.x-b.x,0);
 		}
 
 		context->m_wind->GetRenderWindow()->setView(m_view);
