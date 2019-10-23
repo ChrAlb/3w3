@@ -52,13 +52,7 @@ void State_Game::Update(const sf::Time& l_time){
 		sf::Vector2f a, b;
 		a = player->GetPosition();
 		b = player->GetOldPosistion();
-		/* Debug
-		std::cout << a.x;
-		std::cout << '\n';
-		std::cout << b.x;
-		std::cout << '\n';
-		std::cout << '\n';
-		*/
+		
 		if (  (player->GetPosition().x < sf::VideoMode::getDesktopMode().width/2)  || (player->GetPosition().x > (m_gameMap->GetMapSize().x - (sf::VideoMode::getDesktopMode().width / 2)))  )
         {
 		m_view.move(0,0);	
