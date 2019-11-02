@@ -169,6 +169,15 @@
     <None Include="media\Characters\Player.char">
       <Filter>Ressourcendateien</Filter>
     </None>
+    <None Include="media\Characters\EnemyList.list">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Characters\Rat.char">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Spritesheets\Rat.sheet">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="keys.cfg.txt">
@@ -189,6 +198,9 @@
       <Filter>Ressourcendateien</Filter>
     </Image>
     <Image Include="media\Textures\PlayerSheet.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="media\Textures\bullet.png">
       <Filter>Ressourcendateien</Filter>
     </Image>
   </ItemGroup>

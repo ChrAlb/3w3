@@ -207,10 +207,13 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="media\Characters\EnemyList.list" />
     <None Include="media\Characters\Player.char" />
+    <None Include="media\Characters\Rat.char" />
     <None Include="media\Maps\map1.map" />
     <None Include="media\Maps\map2.map" />
     <None Include="media\Spritesheets\Player.sheet" />
+    <None Include="media\Spritesheets\Rat.sheet" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="keys.cfg.txt" />
@@ -218,6 +221,7 @@
     <Text Include="tiles.cfg.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="media\Textures\bullet.png" />
     <Image Include="media\Textures\PlayerSheet.png" />
     <Image Include="media\Textures\Start.png" />
     <Image Include="media\Textures\tilesheet.png" />
