@@ -12,6 +12,7 @@ public:
 
 	void Jump();
 	void Attack();
+	void Shoot();
 	void GetHurt(const int& l_damage);
 
 	void Load(const std::string& l_path);
@@ -31,4 +32,6 @@ protected:
 
 	sf::FloatRect m_attackAABB;
 	sf::Vector2f m_attackAABBoffset;
+
+	SharedContext* m_context;
 };

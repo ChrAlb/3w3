@@ -30,6 +30,18 @@ void Character::Attack(){
 	SetState(EntityState::Attacking);
 }
 
+void Character::Shoot()
+{
+	EntityManager* entityMgr = m_context->m_entityManager;
+	int bulletId = -1;
+	
+	bulletId = entityMgr->Add(EntityType::Bullet);
+	float bulletX = 0; float bulletY = 0;
+	entityMgr->Find(bulletId)->SetPosition(bulletX, bulletY);
+	//m_playerStart = sf::Vector2f(playerX, playerY);
+	
+}
+
 void Character::GetHurt(const int& l_damage){
 	if (GetState() == EntityState::Dying || GetState() == EntityState::Hurt){ return; }
 	m_hitpoints = (m_hitpoints - l_damage > 0 ? m_hitpoints - l_damage : 0);

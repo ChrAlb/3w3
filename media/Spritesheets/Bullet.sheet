@@ -1,0 +1,6 @@
+Texture bullet
+Size 10 10
+Scale 1.0 1.0
+|Type|Name|StartFrame|EndFrame|Row|FrameTime|FrameActionStart|FrameActionEnd|
+AnimationType Directional
+Animation Idle 0 0 0 10 -1 -1

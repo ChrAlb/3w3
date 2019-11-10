@@ -4,7 +4,7 @@
 #include <SFML/Graphics/Rect.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 
-enum class EntityType{ Base, Enemy, Player };
+enum class EntityType{ Base, Enemy, Player, Bullet };
 
 enum class EntityState{ Idle, Walking, Jumping, Attacking, Hurt, Dying };
 

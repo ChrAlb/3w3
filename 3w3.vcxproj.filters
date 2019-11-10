@@ -75,6 +75,12 @@
     <ClCompile Include="State_Tool.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Quelle.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Anim_Base.h">
@@ -155,6 +161,9 @@
     <ClInclude Include="State_Tool.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="media\Maps\map1.map">
@@ -176,6 +185,9 @@
       <Filter>Ressourcendateien</Filter>
     </None>
     <None Include="media\Spritesheets\Rat.sheet">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Spritesheets\Bullet.sheet">
       <Filter>Ressourcendateien</Filter>
     </None>
   </ItemGroup>
