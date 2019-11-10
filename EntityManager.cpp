@@ -7,6 +7,7 @@ EntityManager::EntityManager(SharedContext* l_context, unsigned int l_maxEntitie
 	LoadEnemyTypes("EnemyList.list");
 	RegisterEntity<Player>(EntityType::Player);
 	RegisterEntity<Enemy>(EntityType::Enemy);
+	RegisterEntity<Bullet>(EntityType::Bullet);
 }
 EntityManager::~EntityManager(){ Purge(); }
 

@@ -9,6 +9,7 @@ Bullet::~Bullet() {}
 
 void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 {
+	/*
 	if (m_state == EntityState::Dying) { return; }
 	if (l_attack) { return; }
 	if (l_collider->GetType() != EntityType::Player) { return; }
@@ -22,10 +23,12 @@ void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 	else {
 		player->AddVelocity(m_speed.y, 0);
 		m_spriteSheet.SetDirection(Direction::Right);
-	}
+	} */
 }
 
 void Bullet::Update(float l_dT) {
+
+	/*
 	Character::Update(l_dT);
 
 	if (m_hasDestination) {
@@ -42,4 +45,5 @@ void Bullet::Update(float l_dT) {
 	m_destination.x = m_position.x + newX;
 	if (m_destination.x < 0) { m_destination.x = 0; }
 	m_hasDestination = true;
+	*/
 }

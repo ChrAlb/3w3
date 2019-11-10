@@ -32,12 +32,10 @@ void Character::Attack(){
 
 void Character::Shoot()
 {
-	EntityManager* entityMgr = m_context->m_entityManager;
-	int bulletId = -1;
+	m_id =  m_entityManager->Add(EntityType::Bullet);
 	
-	bulletId = entityMgr->Add(EntityType::Bullet);
 	float bulletX = 0; float bulletY = 0;
-	entityMgr->Find(bulletId)->SetPosition(bulletX, bulletY);
+	m_entityManager->Find(m_id)->SetPosition(bulletX, bulletY);
 	//m_playerStart = sf::Vector2f(playerX, playerY);
 	
 }

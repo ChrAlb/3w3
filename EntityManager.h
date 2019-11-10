@@ -3,6 +3,7 @@
 #include <functional>
 #include "Player.h"
 #include "Enemy.h"
+#include "Bullet.h"
 
 using EntityContainer = std::unordered_map<unsigned int,EntityBase*>;
 using EntityFactory = std::unordered_map<EntityType, std::function<EntityBase*(void)>>;

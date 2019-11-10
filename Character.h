@@ -2,6 +2,7 @@
 #include "EntityBase.h"
 #include "SpriteSheet.h"
 
+
 class Character : public EntityBase{
 friend class EntityManager;
 public:
@@ -33,5 +34,5 @@ protected:
 	sf::FloatRect m_attackAABB;
 	sf::Vector2f m_attackAABBoffset;
 
-	SharedContext* m_context;
+	
 };
