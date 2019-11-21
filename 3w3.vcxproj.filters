@@ -190,6 +190,9 @@
     <None Include="media\Spritesheets\Bullet.sheet">
       <Filter>Ressourcendateien</Filter>
     </None>
+    <None Include="Bullet.char">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="keys.cfg.txt">

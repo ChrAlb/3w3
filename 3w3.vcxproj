@@ -210,6 +210,7 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Bullet.char" />
     <None Include="media\Characters\EnemyList.list" />
     <None Include="media\Characters\Player.char" />
     <None Include="media\Characters\Rat.char" />

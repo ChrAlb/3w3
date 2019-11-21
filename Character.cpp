@@ -32,6 +32,7 @@ void Character::Attack(){
 
 void Character::Shoot()
 {
+	SetState(EntityState::Shooting);
 	m_id =  m_entityManager->Add(EntityType::Bullet);
 	
 	float bulletX = 0; float bulletY = 0;

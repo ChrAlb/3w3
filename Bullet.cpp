@@ -1,14 +1,19 @@
 #include "Bullet.h"
 
 Bullet::Bullet(EntityManager* l_entityMgr)
-	:Character(l_entityMgr), m_hasDestination(false) {
+	:Character(l_entityMgr), m_hasDestination(false) 
+{
+	Load("Bullet.char");
 	m_type = EntityType::Enemy;
+
 }
 
 Bullet::~Bullet() {}
 
 void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 {
+	
+	
 	/*
 	if (m_state == EntityState::Dying) { return; }
 	if (l_attack) { return; }
