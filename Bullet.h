@@ -11,4 +11,5 @@ public:
 private:
 	sf::Vector2f m_destination;
 	bool m_hasDestination;
+	
 };

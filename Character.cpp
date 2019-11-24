@@ -35,10 +35,8 @@ void Character::Shoot()
 	SetState(EntityState::Shooting);
 	m_id =  m_entityManager->Add(EntityType::Bullet);
 	
-	float bulletX = 0; float bulletY = 0;
-	m_entityManager->Find(m_id)->SetPosition(bulletX, bulletY);
-	//m_playerStart = sf::Vector2f(playerX, playerY);
-	
+	m_entityManager->Find(m_id)->SetPosition(m_spriteSheet.GetSpritePosition());
+    m_entityManager->Find(m_id)->SetDirection(m_spriteSheet.GetDirection());	
 }
 
 void Character::GetHurt(const int& l_damage){

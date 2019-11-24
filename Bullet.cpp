@@ -33,6 +33,11 @@ void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 
 void Bullet::Update(float l_dT) {
 
+	if (m_entitydir == Direction::Left)
+		Character::Move(Direction::Left);
+	else
+		Character::Move(Direction::Right);
+
 	/*
 	Character::Update(l_dT);
 
@@ -52,3 +57,4 @@ void Bullet::Update(float l_dT) {
 	m_hasDestination = true;
 	*/
 }
+

@@ -39,6 +39,13 @@ void EntityBase::SetState(const EntityState& l_state){
 	m_state = l_state;
 }
 
+void EntityBase::SetDirection(const Direction l_dir)
+{
+	m_entitydir = l_dir;
+}
+
+
+
 const sf::Vector2f& EntityBase::GetSize()const{ return m_size; }
 std::string EntityBase::GetName()const{ return m_name; }
 EntityState EntityBase::GetState()const{ return m_state; }
@@ -52,16 +59,6 @@ void EntityBase::Move(float l_x, float l_y){
 	if (l_x != 0  && l_y != 0)
 	    m_positionOld = m_position;
 	m_position += sf::Vector2f(l_x,l_y);
-	
-	/* Debug
-	std::cout << "new:  ";
-	std::cout << m_position.x;
-	std::cout << '\n';
-	std::cout << "old:  ";
-	std::cout << m_positionOld.x;
-	std::cout << '\n';
-	std::cout << '\n';
-	*/
 	sf::Vector2u mapSize = m_entityManager->GetContext()->m_gameMap->GetMapSize();
 	if(m_position.x < 0){
 		m_position.x = 0;
@@ -77,6 +74,7 @@ void EntityBase::Move(float l_x, float l_y){
 	}
 
 	UpdateAABB();
+	
 }
 
 void EntityBase::AddVelocity(float l_x, float l_y){
@@ -89,6 +87,7 @@ void EntityBase::AddVelocity(float l_x, float l_y){
 	if(abs(m_velocity.y) > m_maxVelocity.y){
 		if(m_velocity.y < 0){ m_velocity.y = -m_maxVelocity.y; }
 		else { m_velocity.y = m_maxVelocity.y; }
+		
 	}
 }
 

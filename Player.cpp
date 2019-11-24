@@ -40,6 +40,7 @@ void Player::React(EventDetails* l_details){
 	}
 	else if (l_details-> m_name == "Player_Shoot")
 		Character::Shoot();
+	
 }
 
 void Player::OnEntityCollision(EntityBase* l_collider, bool l_attack){

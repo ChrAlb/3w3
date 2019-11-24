@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Directions.h"
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Graphics/Rect.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
@@ -40,6 +41,7 @@ public:
 	void SetPosition(const sf::Vector2f& l_pos);
 	void SetSize(float l_x, float l_y);
 	void SetState(const EntityState& l_state);
+	void SetDirection(const Direction l_dir);
 
 	void Move(float l_x, float l_y);
 	void AddVelocity(float l_x, float l_y);
@@ -76,7 +78,7 @@ protected:
 	// Flags for remembering axis collisions.
 	bool m_collidingOnX;
 	bool m_collidingOnY;
-
+	Direction m_entitydir;
 	Collisions m_collisions;
 	EntityManager* m_entityManager;
 };
