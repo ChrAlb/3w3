@@ -35,7 +35,12 @@ void Character::Shoot()
 	SetState(EntityState::Shooting);
 	m_id =  m_entityManager->Add(EntityType::Bullet);
 	
-	m_entityManager->Find(m_id)->SetPosition(m_spriteSheet.GetSpritePosition());
+	sf::Vector2f l_bulletpos;
+	l_bulletpos = m_spriteSheet.GetSpritePosition();
+	l_bulletpos.x = l_bulletpos.x + m_spriteSheet.GetSpriteSize().x / 2;
+	l_bulletpos.y =l_bulletpos.y - m_spriteSheet.GetSpriteSize().y / 2;
+
+	m_entityManager->Find(m_id)->SetPosition(l_bulletpos);
     m_entityManager->Find(m_id)->SetDirection(m_spriteSheet.GetDirection());	
 }
 

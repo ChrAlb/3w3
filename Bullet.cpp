@@ -32,29 +32,12 @@ void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 }
 
 void Bullet::Update(float l_dT) {
-
+	Character::Update(l_dT);
 	if (m_entitydir == Direction::Left)
 		Character::Move(Direction::Left);
 	else
 		Character::Move(Direction::Right);
 
-	/*
-	Character::Update(l_dT);
-
-	if (m_hasDestination) {
-		if (abs(m_destination.x - m_position.x) < 16) { m_hasDestination = false; return; }
-		if (m_destination.x - m_position.x > 0) { Move(Direction::Right); }
-		else { Move(Direction::Left); }
-		if (m_collidingOnX) { m_hasDestination = false; }
-		return;
-	}
-	int random = rand() % 1000 + 1;
-	if (random != 1000) { return; }
-	int newX = rand() % 65 + 0;
-	if (rand() % 2) { newX = -newX; }
-	m_destination.x = m_position.x + newX;
-	if (m_destination.x < 0) { m_destination.x = 0; }
-	m_hasDestination = true;
-	*/
+	
 }
 
