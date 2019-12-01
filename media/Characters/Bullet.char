@@ -5,4 +5,4 @@ BoundingBox 5 5
 DamageBox -5 0 5 5
 Speed 1024 128
 JumpVelocity 250
-MaxVelocity 1024 1024
+MaxVelocity 200 1024
