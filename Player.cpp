@@ -13,7 +13,7 @@ Player::Player(EntityManager* l_entityMgr)
 	events->AddCallback<Player>(StateType::Game, "Player_MoveRight", &Player::React, this);
 	events->AddCallback<Player>(StateType::Game, "Player_Jump", &Player::React, this);
 	events->AddCallback<Player>(StateType::Game, "Player_Attack", &Player::React, this);
-	events->AddCallback<Player>(StateType::Game, "Player_Shoot", &Player::React, this);
+	
 }
 
 Player::~Player(){
@@ -22,7 +22,7 @@ Player::~Player(){
 	events->RemoveCallback(StateType::Game, "Player_MoveRight");
 	events->RemoveCallback(StateType::Game, "Player_Jump");
 	events->RemoveCallback(StateType::Game, "Player_Attack");
-	events->RemoveCallback(StateType::Game, "Player_Shoot");
+	
 }
 
 void Player::React(EventDetails* l_details){
@@ -38,8 +38,7 @@ void Player::React(EventDetails* l_details){
 	else if (l_details->m_name == "Player_Attack") {
 		Character::Attack();
 	}
-	else if (l_details-> m_name == "Player_Shoot")
-		Character::Shoot();
+	
 	
 }
 

@@ -27,26 +27,23 @@ void Character::Attack(){
 	if (GetState() == EntityState::Dying || GetState() == EntityState::Jumping ||
 		GetState() == EntityState::Hurt || GetState() == EntityState::Attacking)
 	{ return; }
+	
 	SetState(EntityState::Attacking);
-}
 
-void Character::Shoot()
-{
-	SetState(EntityState::Shooting);
+	m_id = m_entityManager->Add(EntityType::Bullet);
 
-	
-	m_id =  m_entityManager->Add(EntityType::Bullet);
-	
 	sf::Vector2f l_bulletpos;
 	l_bulletpos = m_spriteSheet.GetSpritePosition();
 	l_bulletpos.x = l_bulletpos.x + m_spriteSheet.GetSpriteSize().x / 2;
-	l_bulletpos.y =l_bulletpos.y - m_spriteSheet.GetSpriteSize().y / 2;
+	l_bulletpos.y = l_bulletpos.y - m_spriteSheet.GetSpriteSize().y / 2;
 
 	m_entityManager->Find(m_id)->SetPosition(l_bulletpos);
 	m_entityManager->Find(m_id)->SetDirection(m_spriteSheet.GetDirection());
 	m_entityManager->Find(m_id)->SetState(EntityState::Walking);
-	
+
 }
+
+
 
 void Character::GetHurt(const int& l_damage){
 	if (GetState() == EntityState::Dying || GetState() == EntityState::Hurt){ return; }
@@ -128,10 +125,7 @@ void Character::Animate(){
 	{
 		m_spriteSheet.SetAnimation("Death",true,false);
 	}
-	else if (state == EntityState::Shooting && m_spriteSheet.GetCurrentAnim()->GetName() != "Shoot")
-	{
-		m_spriteSheet.SetAnimation("Shoot", true, false);
-	}
+	
 	else if(state == EntityState::Idle && m_spriteSheet.
 		GetCurrentAnim()->GetName() != "Idle")
 	{

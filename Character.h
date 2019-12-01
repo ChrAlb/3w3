@@ -13,7 +13,6 @@ public:
 
 	void Jump();
 	void Attack();
-	void Shoot();
 	void GetHurt(const int& l_damage);
 
 	void Load(const std::string& l_path);

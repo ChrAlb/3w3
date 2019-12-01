@@ -7,7 +7,7 @@
 
 enum class EntityType{ Base, Enemy, Player, Bullet };
 
-enum class EntityState{ Idle, Walking, Jumping, Attacking, Hurt, Dying, Shooting };
+enum class EntityState{ Idle, Walking, Jumping, Attacking, Hurt, Dying };
 
 struct TileInfo;
 
