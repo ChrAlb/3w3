@@ -41,7 +41,8 @@ void Character::Shoot()
 	l_bulletpos.y =l_bulletpos.y - m_spriteSheet.GetSpriteSize().y / 2;
 
 	m_entityManager->Find(m_id)->SetPosition(l_bulletpos);
-    m_entityManager->Find(m_id)->SetDirection(m_spriteSheet.GetDirection());	
+	m_entityManager->Find(m_id)->SetDirection(m_spriteSheet.GetDirection());	
+	m_entityManager->Find(m_id)->SetState(EntityState::Walking);
 }
 
 void Character::GetHurt(const int& l_damage){

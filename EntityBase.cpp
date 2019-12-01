@@ -116,7 +116,12 @@ void EntityBase::ApplyFriction(float l_x, float l_y){
 void EntityBase::Update(float l_dT){
 	Map* map = m_entityManager->GetContext()->m_gameMap;
 	float gravity = map->GetGravity();
-	Accelerate(0,gravity);
+	EntityType l_type;
+	l_type = GetType();
+	if ( l_type == EntityType::Bullet)
+       Accelerate(0,0);
+	else
+	   Accelerate(0, gravity);
 	AddVelocity(m_acceleration.x * l_dT, m_acceleration.y * l_dT);
 	SetAcceleration(0.0f, 0.0f);
 	sf::Vector2f frictionValue;

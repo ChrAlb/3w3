@@ -4,7 +4,7 @@ Bullet::Bullet(EntityManager* l_entityMgr)
 	:Character(l_entityMgr), m_hasDestination(false) 
 {
 	Load("Bullet.char");
-	m_type = EntityType::Enemy;
+	m_type = EntityType::Bullet;
 
 }
 
@@ -32,12 +32,14 @@ void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 }
 
 void Bullet::Update(float l_dT) {
+	
 	Character::Update(l_dT);
+	
 	if (m_entitydir == Direction::Left)
 		Character::Move(Direction::Left);
 	else
 		Character::Move(Direction::Right);
-
+		
 	
 }
 
