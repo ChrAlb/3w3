@@ -33,6 +33,8 @@ void Character::Attack(){
 void Character::Shoot()
 {
 	SetState(EntityState::Shooting);
+
+	
 	m_id =  m_entityManager->Add(EntityType::Bullet);
 	
 	sf::Vector2f l_bulletpos;
@@ -43,6 +45,7 @@ void Character::Shoot()
 	m_entityManager->Find(m_id)->SetPosition(l_bulletpos);
 	m_entityManager->Find(m_id)->SetDirection(m_spriteSheet.GetDirection());
 	m_entityManager->Find(m_id)->SetState(EntityState::Walking);
+	
 }
 
 void Character::GetHurt(const int& l_damage){
