@@ -32,6 +32,12 @@ void Character::Attack(){
 
 void Character::Shoot()
 {
+	if (GetState() == EntityState::Dying || GetState() == EntityState::Jumping ||
+		GetState() == EntityState::Hurt || GetState() == EntityState::Shooting)
+	{
+		return;
+	}
+	
 	SetState(EntityState::Shooting);
 
 	
@@ -39,7 +45,10 @@ void Character::Shoot()
 	
 	sf::Vector2f l_bulletpos;
 	l_bulletpos = m_spriteSheet.GetSpritePosition();
-	l_bulletpos.x = l_bulletpos.x + m_spriteSheet.GetSpriteSize().x / 2;
+	if (m_spriteSheet.GetDirection() == Direction::Right)
+	     l_bulletpos.x = l_bulletpos.x + m_spriteSheet.GetSpriteSize().x / 2;
+	else
+		l_bulletpos.x = l_bulletpos.x - m_spriteSheet.GetSpriteSize().x / 2;
 	l_bulletpos.y =l_bulletpos.y - m_spriteSheet.GetSpriteSize().y / 2;
 
 	m_entityManager->Find(m_id)->SetPosition(l_bulletpos);
