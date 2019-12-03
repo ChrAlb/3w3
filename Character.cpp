@@ -158,13 +158,13 @@ void Character::Update(float l_dT){
 			sf::RectangleShape* arect = new sf::RectangleShape(sf::Vector2f(m_attackAABB.width,m_attackAABB.height));
 			arect->setPosition(m_attackAABB.left,m_attackAABB.top);
 			arect->setFillColor(sf::Color(255,0,0,
-				(m_state == EntityState::Attacking && m_spriteSheet.GetCurrentAnim()->IsInAction() 
+				(m_state == EntityState::Shooting && m_state == EntityState::Attacking && m_spriteSheet.GetCurrentAnim()->IsInAction() 
 				? 200 : 100)));
 			m_entityManager->GetContext()->m_debugOverlay.Add(arect);
 		}
 		// End debug.
 	}
-	if(GetState() != EntityState::Dying && GetState() != EntityState::Attacking && GetState() != EntityState::Hurt){
+	if(GetState() != EntityState::Dying && GetState() != EntityState::Shooting && GetState() != EntityState::Hurt && GetState() != EntityState::Attacking){
 		if(abs(m_velocity.y) >= 0.001f){
 			SetState(EntityState::Jumping);
 		} else if(abs(m_velocity.x) >= 0.1f){
@@ -172,7 +172,7 @@ void Character::Update(float l_dT){
 		} else {
 			SetState(EntityState::Idle);
 		}
-	} else if(GetState() == EntityState::Attacking || GetState() == EntityState::Hurt){
+	} else if(GetState() == EntityState::Shooting || GetState() == EntityState::Hurt || GetState() == EntityState::Attacking ){
 		if(!m_spriteSheet.GetCurrentAnim()->IsPlaying()){
 			SetState(EntityState::Idle);
 		}
