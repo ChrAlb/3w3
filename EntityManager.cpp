@@ -57,7 +57,7 @@ void EntityManager::Update(float l_dT){
 		itr.second->Update(l_dT);
 	}
 
-	EntityCollisionCheck();
+ 	EntityCollisionCheck();
 	ProcessRemovals();
 }
 

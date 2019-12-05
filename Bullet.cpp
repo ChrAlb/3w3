@@ -5,7 +5,7 @@ Bullet::Bullet(EntityManager* l_entityMgr)
 {
 	Load("Bullet.char");
 	m_type = EntityType::Bullet;
-
+	
 }
 
 Bullet::~Bullet() {}
@@ -40,6 +40,9 @@ void Bullet::Update(float l_dT) {
 	else
 		Character::Move(Direction::Right);
 		
-	
+	if (m_position.x < 0 || m_position.x > sf::VideoMode::getDesktopMode().width)
+	    m_state = EntityState::Dying;
 }
+
+
 

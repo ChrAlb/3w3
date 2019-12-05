@@ -182,6 +182,9 @@ void Character::Update(float l_dT){
 		}
 	}
 
+	if (GetState()==EntityState::Dying && GetType()==EntityType::Bullet)
+		m_entityManager->Remove(m_id);
+
 	Animate();
 
 	m_spriteSheet.Update(l_dT);
