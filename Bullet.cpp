@@ -1,4 +1,7 @@
 #include "Bullet.h"
+#include "Map.h"
+#include "EntityManager.h"
+#include "SharedContext.h"
 
 Bullet::Bullet(EntityManager* l_entityMgr)
 	:Character(l_entityMgr), m_hasDestination(false) 
@@ -40,6 +43,12 @@ void Bullet::Update(float l_dT) {
 	else
 		Character::Move(Direction::Right);
 		
+	Map* map = m_entityManager->GetContext()->m_gameMap;
+
+
+
+	if (m_position.x < 1 || m_position.x > map->GetTileSize() * map->GetMapSize().x )
+		SetState(EntityState::Dying);
 	
 }
 
