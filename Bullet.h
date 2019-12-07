@@ -1,9 +1,8 @@
 #pragma once
 #include "Character.h"
 
-
 class Bullet : public Character {
-	friend class EntityManager;
+	
 public:
 	Bullet(EntityManager* l_entityMgr);
 	~Bullet();

@@ -45,7 +45,6 @@ void EntityBase::SetDirection(const Direction l_dir)
 }
 
 
-
 const sf::Vector2f& EntityBase::GetSize()const{ return m_size; }
 std::string EntityBase::GetName()const{ return m_name; }
 EntityState EntityBase::GetState()const{ return m_state; }

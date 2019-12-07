@@ -21,6 +21,10 @@ Tile* Map::GetTile(unsigned int l_x, unsigned int l_y){
 	return(itr != m_tileMap.end() ? itr->second : nullptr);
 }
 TileInfo* Map::GetDefaultTile(){ return &m_defaultTile; }
+sf::Vector2u Map::GetMapSize()
+{
+	return m_maxMapSize;
+}
 float Map::GetGravity()const{ return m_mapGravity; }
 unsigned int Map::GetTileSize()const{ return Sheet::Tile_Size; }
 const sf::Vector2u& Map::GetMapSize()const{ return m_maxMapSize; }

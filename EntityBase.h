@@ -42,8 +42,7 @@ public:
 	void SetSize(float l_x, float l_y);
 	void SetState(const EntityState& l_state);
 	void SetDirection(const Direction l_dir);
-
-	void Move(float l_x, float l_y);
+    void Move(float l_x, float l_y);
 	void AddVelocity(float l_x, float l_y);
 	void Accelerate(float l_x, float l_y);
 	void SetAcceleration(float l_x, float l_y);
@@ -81,4 +80,5 @@ protected:
 	Direction m_entitydir;
 	Collisions m_collisions;
 	EntityManager* m_entityManager;
+
 };

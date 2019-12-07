@@ -62,6 +62,7 @@ public:
 
 	Tile* GetTile(unsigned int l_x, unsigned int l_y);
 	TileInfo* GetDefaultTile();
+	sf::Vector2u GetMapSize();
 
 	float GetGravity()const;
 	unsigned int GetTileSize()const;
@@ -73,6 +74,9 @@ public:
 
 	void Update(float l_dT);
 	void Draw();
+
+	
+
 private:
 	// Method for converting 2D coordinates to 1D ints.
 	unsigned int ConvertCoords(unsigned int l_x, unsigned int l_y);

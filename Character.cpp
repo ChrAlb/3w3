@@ -1,4 +1,5 @@
 #include "Character.h"
+
 #include "EntityManager.h"
 #include "StateManager.h"
 
@@ -39,10 +40,7 @@ void Character::Shoot()
 	}
 	
 	SetState(EntityState::Shooting);
-
-	
-	m_id =  m_entityManager->Add(EntityType::Bullet);
-	
+    m_id =  m_entityManager->Add(EntityType::Bullet);
 	sf::Vector2f l_bulletpos;
 	l_bulletpos = m_spriteSheet.GetSpritePosition();
 	if (m_spriteSheet.GetDirection() == Direction::Right)

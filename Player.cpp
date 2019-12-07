@@ -62,5 +62,6 @@ void Player::OnEntityCollision(EntityBase* l_collider, bool l_attack){
 		}
 	} else {
 		// Other behavior.
+		
 	}
 }
