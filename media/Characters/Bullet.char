@@ -3,6 +3,6 @@ Spritesheet Bullet.sheet
 Hitpoints 1
 BoundingBox 5 5
 DamageBox -5 0 5 5
-Speed 1024 128
+Speed 2500 0
 JumpVelocity 250
-MaxVelocity 200 1024
+MaxVelocity 10000 1024
