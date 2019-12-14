@@ -227,6 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="media\Textures\bullet.png" />
+    <Image Include="media\Textures\chief_sheet.png" />
     <Image Include="media\Textures\PlayerSheet.png" />
     <Image Include="media\Textures\Start.png" />
     <Image Include="media\Textures\tilesheet.png" />

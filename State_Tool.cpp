@@ -45,35 +45,30 @@ void State_Tool::Tools1(EventDetails* l_details)
 {
 	TileSize = 256;
 	BrickCounter = 1;
+	heigth = 776;
+	width = 597;
+	row = 1;
 
-	DestFName = "C:\\Test\\tilesheet2048.png";
+	DestFName = "C:\\Test\\Zielfile1.png";
 
 
 	
-	if (!DestinationFile.loadFromFile(DestFName));
-	{
+	DestinationFile.loadFromFile(DestFName);
+	/*{
 		printf("Error DestFile");
 
 	}
-	
-	for(i=0;i<8;i++)
-		for (j = 0; j < 8; j++)
-		{
-			if (
-				(i == 0) || 
-				
-				( (j == 0) && (i==1 ))
-				)
-				;
-			else
+*/	
+	for(i=0;i<6;i++)
+			
 			{
 				std::string name;
-				name = "C:\\Test\\Brick (" ;
+				name = "C:\\Test\\attacking" ;
 
 				std::stringstream ss;
 				ss << BrickCounter;
 				std::string str = ss.str();
-				name = name + str + ").png";
+				name = name + str + ".png";
 
 				SourceFName = name;
 
@@ -82,14 +77,16 @@ void State_Tool::Tools1(EventDetails* l_details)
 					printf("Error SourceFile");
 				}
 
-				DestinationFile.copy(SourceFiles, (j) * TileSize, (i) * TileSize, { 0,0,TileSize,TileSize }, false);
+				DestinationFile.copy(SourceFiles, (i)*width, (row)*heigth, { 0,0,width,heigth }, false);
+
+				printf("Works");
 				BrickCounter++;
 
 			}
 
-			
-		}
+				
 	DestinationFile.saveToFile(DestFName);
+	printf("End");
 }
 
 void State_Tool::Update(const sf::Time& l_time) {}

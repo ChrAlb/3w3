@@ -35,8 +35,10 @@ private:
 	int amountTileFiles;
 
 	int TileSize;
+	int heigth, width;
 	int i, j;
 	int BrickCounter;
+	int row;
 
 
 	sf::Vector2i Size_DestinationFile;

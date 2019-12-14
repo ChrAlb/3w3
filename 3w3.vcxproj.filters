@@ -218,5 +218,8 @@
     <Image Include="media\Textures\bullet.png">
       <Filter>Ressourcendateien</Filter>
     </Image>
+    <Image Include="media\Textures\chief_sheet.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
   </ItemGroup>
 </Project>
