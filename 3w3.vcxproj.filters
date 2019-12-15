@@ -193,6 +193,12 @@
     <None Include="media\Characters\Bullet.char">
       <Filter>Ressourcendateien</Filter>
     </None>
+    <None Include="media\Characters\Chief.char">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Spritesheets\Chief.sheet">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="keys.cfg.txt">
@@ -219,6 +225,9 @@
       <Filter>Ressourcendateien</Filter>
     </Image>
     <Image Include="media\Textures\chief_sheet.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="media\Textures\RatSheet.png">
       <Filter>Ressourcendateien</Filter>
     </Image>
   </ItemGroup>

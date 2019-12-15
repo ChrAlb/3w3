@@ -211,12 +211,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="media\Characters\Bullet.char" />
+    <None Include="media\Characters\Chief.char" />
     <None Include="media\Characters\EnemyList.list" />
     <None Include="media\Characters\Player.char" />
     <None Include="media\Characters\Rat.char" />
     <None Include="media\Maps\map1.map" />
     <None Include="media\Maps\map2.map" />
     <None Include="media\Spritesheets\Bullet.sheet" />
+    <None Include="media\Spritesheets\Chief.sheet" />
     <None Include="media\Spritesheets\Player.sheet" />
     <None Include="media\Spritesheets\Rat.sheet" />
   </ItemGroup>
@@ -229,6 +231,7 @@
     <Image Include="media\Textures\bullet.png" />
     <Image Include="media\Textures\chief_sheet.png" />
     <Image Include="media\Textures\PlayerSheet.png" />
+    <Image Include="media\Textures\RatSheet.png" />
     <Image Include="media\Textures\Start.png" />
     <Image Include="media\Textures\tilesheet.png" />
   </ItemGroup>
