@@ -10,6 +10,12 @@ void Enemy::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 	if (m_state == EntityState::Dying){ return; }
 	if (l_attack){ return; }
 	if (l_collider->GetType() != EntityType::Player){ return; }
+	if (l_collider->GetType() == EntityType::Bullet)
+	{
+		SetState(EntityState::Dying);
+		l_collider->SetState(EntityState::Dying);
+		return;
+	}
 	Character* player = (Character*)l_collider;
 	SetState(EntityState::Attacking);
 	player->GetHurt(1);
