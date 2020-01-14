@@ -108,14 +108,14 @@ void EntityManager::EntityCollisionCheck(){
 
 			EntityType t1 = itr->second->GetType();
 			EntityType t2 = itr2->second->GetType();
-			if (t1 == EntityType::Player || t1 == EntityType::Enemy || t1 == EntityType::Bullet){
+			if (t1 == EntityType::Player || t1 == EntityType::Enemy){
 				Character* c1 = (Character*)itr->second;
 				if (c1->m_attackAABB.intersects(itr2->second->m_AABB)){
 					c1->OnEntityCollision(itr2->second, true);
 				}
 			}
 
-			if (t2 == EntityType::Player || t2 == EntityType::Enemy || t2== EntityType::Bullet){
+			if (t2 == EntityType::Player || t2 == EntityType::Enemy){
 				Character* c2 = (Character*)itr2->second;
 				if (c2->m_attackAABB.intersects(itr->second->m_AABB)){
 					c2->OnEntityCollision(itr->second, true);

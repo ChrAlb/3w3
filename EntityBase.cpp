@@ -147,6 +147,14 @@ void EntityBase::Update(float l_dT){
 
 void EntityBase::UpdateAABB(){
 	m_AABB = sf::FloatRect(m_position.x - (m_size.x / 2),m_position.y - m_size.y, m_size.x,m_size.y);
+	// Debug
+	if (m_entityManager->GetContext()->m_debugOverlay.Debug()) {
+		sf::RectangleShape* rect = new sf::RectangleShape(sf::Vector2f(m_size.x, m_size.y));
+		rect->setPosition(m_position.x - (m_size.x / 2), m_position.y - m_size.y);
+		rect->setFillColor(sf::Color(52, 55, 235, 150));
+		m_entityManager->GetContext()->m_debugOverlay.Add(rect);
+	}
+	// End debug.
 }
 
 void EntityBase::CheckCollisions(){
