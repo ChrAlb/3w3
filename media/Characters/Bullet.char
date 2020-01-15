@@ -1,7 +1,7 @@
 Name Bullet
 Spritesheet Bullet.sheet
 Hitpoints 1
-BoundingBox 5 5
+BoundingBox 50 50
 DamageBox -5 0 5 5
 Speed 2500 0
 JumpVelocity 250
