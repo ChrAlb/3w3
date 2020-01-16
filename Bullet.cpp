@@ -15,12 +15,17 @@ Bullet::~Bullet() {}
 
 void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 {
-	
-	
-	/*
+		
 	if (m_state == EntityState::Dying) { return; }
 	if (l_attack) { return; }
-	if (l_collider->GetType() != EntityType::Player) { return; }
+	//if (l_collider->GetType() != EntityType::Bullet) { return; }
+	if (l_collider->GetType() == EntityType::Enemy)
+	{
+		SetState(EntityState::Dying);
+		l_collider->SetState(EntityState::Dying);
+		return;
+	}
+	/*
 	Character* player = (Character*)l_collider;
 	SetState(EntityState::Attacking);
 	player->GetHurt(1);
@@ -31,7 +36,8 @@ void Bullet::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 	else {
 		player->AddVelocity(m_speed.y, 0);
 		m_spriteSheet.SetDirection(Direction::Right);
-	} */
+	} 
+	*/
 }
 
 void Bullet::Update(float l_dT) {
