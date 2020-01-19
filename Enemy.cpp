@@ -15,6 +15,7 @@ void Enemy::OnEntityCollision(EntityBase* l_collider, bool l_attack)
 		SetState(EntityState::Dying);
 		l_collider->SetState(EntityState::Dying);
 		return;
+
 	}
 	Character* player = (Character*)l_collider;
 	SetState(EntityState::Attacking);
