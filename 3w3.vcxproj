@@ -167,6 +167,12 @@
     <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GUI_Element.cpp" />
+    <ClCompile Include="GUI_Interface.cpp" />
+    <ClCompile Include="GUI_Label.cpp" />
+    <ClCompile Include="GUI_Manager.cpp" />
+    <ClCompile Include="GUI_Scrollbar.cpp" />
+    <ClCompile Include="GUI_TextField.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Quelle.cpp" />
