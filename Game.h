@@ -26,6 +26,8 @@ private:
 	SharedContext m_context;
 	Window m_window;
 	EntityManager m_entityManager;
+	FontManager m_fontManager;
 	TextureManager m_textureManager;
+	GUI_Manager m_guiManager;
 	StateManager m_stateManager;
 };

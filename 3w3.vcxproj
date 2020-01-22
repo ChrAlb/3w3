@@ -198,6 +198,7 @@
     <ClInclude Include="EntityBase.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="EventManager.h" />
+    <ClInclude Include="FontManager.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GUI_Element.h" />
     <ClInclude Include="GUI_Event.h" />
