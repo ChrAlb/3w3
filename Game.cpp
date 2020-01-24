@@ -46,6 +46,11 @@ void Game::Render(){
 	}
 	// End debug.
 
+	sf::View CurrentView = m_window.GetRenderWindow()->getView();
+	m_window.GetRenderWindow()->setView(m_window.GetRenderWindow()->getDefaultView());
+	m_context.m_guiManager->Render(m_window->GetRenderWindow());
+	m_window.GetRenderWindow()->setView(CurrentView);
+
 	m_window.EndDraw();
 }
 
