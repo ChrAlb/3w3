@@ -244,6 +244,33 @@
     <None Include="media\Spritesheets\Chief.sheet">
       <Filter>Ressourcendateien</Filter>
     </None>
+    <None Include="media\GUI_Interfaces\MainMenu.interface">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Interfaces\Test.interface">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\MainMenu.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\MainMenuLabel.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\MainMenuTitle.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\Test.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\Test2.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\TestInterface.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\GUI_Styles\TestScrollbar.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="keys.cfg.txt">
