@@ -8,7 +8,15 @@ State_MainMenu::~State_MainMenu(){}
 
 void State_MainMenu::OnCreate() {
 
-	m_bgtexture.load(Textures::MenuBGScreen, "graphics/BG3.png");
+	sf::Vector2u windowSize = m_stateMgr->GetContext()
+		->m_wind->GetRenderWindow()->getSize();
+
+	TextureManager* textureMgr = m_stateMgr->GetContext()->m_textureManager;
+	textureMgr->RequireResource("BgMenu");
+	m_bgSprite.setTexture(*textureMgr->GetResource("BgMenu"));
+	m_bgSprite.setOrigin(textureMgr->GetResource("BgMenu")->getSize().x / 2.0f,
+		textureMgr->GetResource("Intro")->getSize().y / 2.0f);
+    m_bgSprite.setPosition(windowSize.x / 2.0f, windowSize.y / 2.0f);
 
 	GUI_Manager* gui = m_stateMgr->GetContext()->m_guiManager;
 	gui->LoadInterface(StateType::MainMenu, "MainMenu.interface", "MainMenu");
@@ -18,8 +26,7 @@ void State_MainMenu::OnCreate() {
 	eMgr->AddCallback(StateType::MainMenu, "MainMenu_Play", &State_MainMenu::Play, this);
 	eMgr->AddCallback(StateType::MainMenu, "MainMenu_LevEdit", &State_MainMenu::LevEdit, this);
 	eMgr->AddCallback(StateType::MainMenu, "MainMenu_Quit", &State_MainMenu::Quit, this);
-	eMgr->AddCallback(StateType::MainMenu, "Key_F1", &State_MainMenu::Start_TileMaker, this); on
-	eMgr->AddCallback(StateType::MainMenu, "Key_F2", &State_MainMenu::Start_SpriteSheetMaker, this);
+	
 }
 
 void State_MainMenu::OnDestroy() {
