@@ -247,6 +247,7 @@
     <None Include="media\Spritesheets\Rat.sheet" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="fonts.cfg.txt" />
     <Text Include="keys.cfg.txt" />
     <Text Include="textures.cfg.txt" />
     <Text Include="tiles.cfg.txt" />

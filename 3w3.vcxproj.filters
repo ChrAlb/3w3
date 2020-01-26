@@ -282,6 +282,9 @@
     <Text Include="tiles.cfg.txt">
       <Filter>Ressourcendateien</Filter>
     </Text>
+    <Text Include="fonts.cfg.txt">
+      <Filter>Ressourcendateien</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <Image Include="media\Textures\tilesheet.png">
