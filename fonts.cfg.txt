@@ -1,1 +1,1 @@
-Main Fonts\arial.otf
+Main media\Fonts\arial.ttf
