@@ -67,14 +67,18 @@ void State_MainMenu::Draw(){
 
 void State_MainMenu::Play(EventDetails* l_details)
 {
+	m_stateMgr->SwitchTo(StateType::Game);
 }
 
-void State_MainMenu::LevEdit(EventDetails* l_details)
-{
+void State_MainMenu::LevEdit(EventDetails* l_details) 
+{ 
+	m_stateMgr->SwitchTo(StateType::Tool); 
 }
+
 
 void State_MainMenu::Quit(EventDetails* l_details)
 {
+	m_stateMgr->GetContext()->m_wind->Close(); 
 }
 
 void State_MainMenu::Update(const sf::Time& l_time){}

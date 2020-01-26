@@ -15,8 +15,8 @@ struct SharedContext{
 		m_textureManager(nullptr),
 		m_entityManager(nullptr),
 		m_fontManager(nullptr),
-		m_gameMap(nullptr){},
-		m_guiMananager(nullptr){}
+		m_gameMap(nullptr),
+		m_guiManager(nullptr){}
 
 	Window* m_wind;
 	EventManager* m_eventManager;
