@@ -1,6 +1,10 @@
 #include "Game.h"
+
+
 Game::Game(): m_window("3w3", sf::Vector2u(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height)),
 	m_stateManager(&m_context), m_entityManager(&m_context, 100), m_guiManager(m_window.GetEventManager(),&m_context)
+
+
 {
 	m_clock.restart();
 	srand(time(nullptr));

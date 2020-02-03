@@ -28,5 +28,6 @@ struct SharedContext{
 	Map* m_gameMap;
 	GUI_Manager* m_guiManager;
 	DebugOverlay m_debugOverlay;
+
 };
 
