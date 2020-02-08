@@ -7,7 +7,7 @@ State_MainMenu::State_MainMenu(StateManager* l_stateManager)
 State_MainMenu::~State_MainMenu(){}
 
 void State_MainMenu::OnCreate() {
-
+	  
 	sf::Vector2u windowSize = m_stateMgr->GetContext()
 		->m_wind->GetRenderWindow()->getSize();
 
