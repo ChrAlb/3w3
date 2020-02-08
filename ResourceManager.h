@@ -65,6 +65,7 @@ protected:
 private:
 	std::pair<T*,unsigned int>* Find(const std::string& l_id){
 
+
 		auto itr = m_resources.find(l_id);
 		return (itr != m_resources.end() ? &itr->second : nullptr);
 	}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\albch\Documents\GitHub\3w3\3w3\</FILEPATH>
+      <FILENAME>GUI_Scrollbar.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "GUI_Scrollbar::m_sliderType" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>GUI_Scrollbar::{ctor}</FUNCTION>
+    <DECORATED>??0GUI_Scrollbar@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAVGUI_Interface@@@Z</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>GUI_Scrollbar::m_sliderType</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\albch\Documents\GitHub\3w3\3w3\</FILEPATH>
+      <FILENAME>GUI_Scrollbar.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "GUI_Scrollbar::m_percentage" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>GUI_Scrollbar::{ctor}</FUNCTION>
+    <DECORATED>??0GUI_Scrollbar@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAVGUI_Interface@@@Z</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>GUI_Scrollbar::m_percentage</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -30,7 +30,7 @@ void GUI_Element::UpdateStyle(const GUI_ElementState& l_state,
 		ReleaseTexture(m_style[l_state].m_glyph);
 		RequireTexture(l_style.m_glyph);
 	}
-
+	
 	if (l_style.m_textFont != m_style[l_state].m_textFont){
 		ReleaseFont(m_style[l_state].m_textFont);
 		RequireFont(l_style.m_textFont);

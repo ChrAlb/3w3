@@ -1,6 +1,7 @@
 #pragma once
 #include "BaseState.h"
 #include "EventManager.h"
+#include "SharedContext.h"
 
 class State_MainMenu : public BaseState{
 public:
@@ -27,6 +28,5 @@ private:
 	sf::Vector2f m_buttonPos;
 	unsigned int m_buttonPadding;
 
-	sf::RectangleShape m_rects[3];
-	sf::Text m_labels[3];
+	
 };

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\albch\Documents\GitHub\3w3\3w3\</FILEPATH>
+      <FILENAME>State_MainMenu.cpp</FILENAME>
+      <LINE>4</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Die Variable "State_MainMenu::m_buttonPadding" ist nicht initialisiert. Eine Membervariable muss immer initialisiert werden (type.6).</DESCRIPTION>
+    <FUNCTION>State_MainMenu::{ctor}</FUNCTION>
+    <DECORATED>??0State_MainMenu@@QAE@PAVStateManager@@@Z</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>State_MainMenu::m_buttonPadding</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

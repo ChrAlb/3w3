@@ -1,10 +1,10 @@
 #pragma once
 #include "Window.h"
 #include "EventManager.h"
-#include "FontManager.h"
-#include "GUI_Manager.h"
 #include "TextureManager.h"
+#include "FontManager.h"
 #include "EntityManager.h"
+#include "GUI_Manager.h"
 #include "DebugOverlay.h"
 
 class Map;

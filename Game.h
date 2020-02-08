@@ -3,6 +3,7 @@
 #include "EventManager.h"
 #include "StateManager.h"
 #include "TextureManager.h"
+#include "FontManager.h"
 #include "EntityManager.h"
 #include <iostream>
 
@@ -25,9 +26,10 @@ private:
 	sf::Time m_elapsed;
 	SharedContext m_context;
 	Window m_window;
-	EntityManager m_entityManager;
 	TextureManager m_textureManager;
 	FontManager m_fontManager;
 	GUI_Manager m_guiManager;
+	EntityManager m_entityManager;
 	StateManager m_stateManager;
 };
+
