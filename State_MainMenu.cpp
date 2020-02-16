@@ -15,7 +15,7 @@ void State_MainMenu::OnCreate() {
 	TextureManager* textureMgr = m_stateMgr->GetContext()->m_textureManager;
 	textureMgr->RequireResource("BgMenu");
 	m_bgSprite.setTexture(*textureMgr->GetResource("BgMenu"));
-	
+	   
 
 	GUI_Manager* gui = m_stateMgr->GetContext()->m_guiManager;
 	// Progress
