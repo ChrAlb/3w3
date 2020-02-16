@@ -5,6 +5,7 @@
 #include "TextureManager.h"
 #include "FontManager.h"
 #include "EntityManager.h"
+#include "GUI_Manager.h"
 #include <iostream>
 
 class Game{

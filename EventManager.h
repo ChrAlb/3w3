@@ -1,5 +1,3 @@
-
-
 #pragma once
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
@@ -9,7 +7,6 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include "Utilities.h"
 #include "GUI_Event.h"
 
 
