@@ -31,6 +31,11 @@ void EventManager::SetCurrentState(StateType l_state) {
 	m_currentState = l_state;
 }
 
+StateType EventManager::GetCurrentState()
+{
+	return m_currentState;
+}
+
 void EventManager::SetFocus(const bool& l_focus) { m_hasFocus = l_focus; }
 
 void EventManager::HandleEvent(sf::Event& l_event) {

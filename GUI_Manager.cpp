@@ -114,7 +114,7 @@ bool GUI_Manager::PollEvent(GUI_Event& l_event){
 }
 void GUI_Manager::Update(float l_dT){
 	sf::Vector2i mousePos = m_eventMgr->GetMousePos(m_context->m_wind->GetRenderWindow());
-
+	m_currentState = m_eventMgr->GetCurrentState();
 	auto state = m_interfaces.find(m_currentState);
 	if (state == m_interfaces.end()){ return; }
 	for (auto itr = state->second.rbegin(); itr != state->second.rend(); ++itr){

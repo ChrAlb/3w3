@@ -2,7 +2,7 @@
 #include "StateManager.h"
 
 State_MainMenu::State_MainMenu(StateManager* l_stateManager)
-	: BaseState(l_stateManager){}p
+	: BaseState(l_stateManager){}
 
 State_MainMenu::~State_MainMenu(){}
 
@@ -19,7 +19,7 @@ void State_MainMenu::OnCreate() {
 
 	GUI_Manager* gui = m_stateMgr->GetContext()->m_guiManager;
 	// Progress
-	gui->SetCurrentState(StateType::MainMenu);
+	//gui->SetCurrentState(StateType::MainMenu);
 	gui->LoadInterface(StateType::MainMenu, "MainMenu.interface", "MainMenu");
 	gui->GetInterface(StateType::MainMenu, "MainMenu")->SetPosition(sf::Vector2f(250.f, 168.f));
 

@@ -111,6 +111,7 @@ public:
 	bool RemoveBinding(std::string l_name);
 
 	void SetCurrentState(StateType l_state);
+	StateType GetCurrentState();
 	void SetFocus(const bool& l_focus);
 
 	// Needs to be defined in the header!
