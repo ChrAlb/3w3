@@ -209,6 +209,9 @@
     <ClInclude Include="FontManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="LevelEditor.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="media\Maps\map1.map">
