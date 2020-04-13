@@ -212,6 +212,9 @@
     <ClInclude Include="LevelEditor.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="State_Editor.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="media\Maps\map1.map">

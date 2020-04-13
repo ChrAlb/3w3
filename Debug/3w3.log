@@ -1,1 +1,239 @@
-﻿  3w3.vcxproj -> C:\Users\albch\Documents\GitHub\3w3\3w3\Debug\3w3.exe
+﻿  3w3.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\3w3.cpp(3,36): warning C4326: Der Rückgabetyp von "main" sollte "int" und nicht "void" sein
+  Anim_Base.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\Anim_Base.cpp(20,25): warning C4018: ">=": Konflikt zwischen "signed" und "unsigned"
+C:\Users\albch\Documents\GitHub\3w3\3w3\Anim_Base.cpp(20,65): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+  Anim_Directional.cpp
+  Bullet.cpp
+  Character.cpp
+  Enemy.cpp
+  EntityBase.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(66,34): warning C4244: "=": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(72,34): warning C4244: "=": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(163,12): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(164,10): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(165,12): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(166,10): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(172,64): warning C4244: "Argument": Konvertierung von "unsigned int" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(172,55): warning C4244: "Argument": Konvertierung von "unsigned int" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(172,44): warning C4244: "Argument": Konvertierung von "unsigned int" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(172,31): warning C4244: "Argument": Konvertierung von "unsigned int" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(196,77): warning C4244: "Argument": Konvertierung von "unsigned int" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\EntityBase.cpp(196,68): warning C4244: "Argument": Konvertierung von "unsigned int" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+  EntityManager.cpp
+  EventManager.cpp
+  GUI_Element.cpp
+  GUI_Interface.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(261,79): warning C4244: "Argument": Konvertierung von "T" in "unsigned int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(261,52): warning C4244: "Argument": Konvertierung von "T" in "unsigned int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(273,96): warning C4244: "Argument": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(273,69): warning C4244: "Argument": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(281,58): warning C4244: "Argument": Konvertierung von "T" in "unsigned int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(281,41): warning C4244: "Argument": Konvertierung von "T" in "unsigned int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(297,127): warning C4244: "Argument": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(297,100): warning C4244: "Argument": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(305,78): warning C4244: "Argument": Konvertierung von "T" in "unsigned int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(305,51): warning C4244: "Argument": Konvertierung von "T" in "unsigned int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(319,95): warning C4244: "Argument": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(319,68): warning C4244: "Argument": Konvertierung von "T" in "T", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(349,63): warning C4244: "=": Konvertierung von "T" in "int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Interface.cpp(356,61): warning C4244: "=": Konvertierung von "T" in "int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+  GUI_Label.cpp
+  GUI_Manager.cpp
+  GUI_Scrollbar.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\GUI_Scrollbar.cpp(98,17): warning C4244: "Initialisierung": Konvertierung von "T" in "int", möglicher Datenverlust
+          with
+          [
+              T=float
+          ]
+  GUI_TextField.cpp
+  Game.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\Game.cpp(10,12): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+  Map.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(51,21): warning C4018: ">": Konflikt zwischen "signed" und "unsigned"
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(51,54): warning C4018: ">": Konflikt zwischen "signed" und "unsigned"
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(164,71): warning C4244: "Argument": Konvertierung von "float" in "T", möglicher Datenverlust
+          with
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(164,30): warning C4244: "Argument": Konvertierung von "float" in "T", möglicher Datenverlust
+          with
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(166,7): warning C4244: "Argument": Konvertierung von "float" in "T", möglicher Datenverlust
+          with
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(165,27): warning C4244: "Argument": Konvertierung von "float" in "T", möglicher Datenverlust
+          with
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(175,47): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(175,25): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(184,54): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+C:\Users\albch\Documents\GitHub\3w3\3w3\Map.cpp(184,32): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+  Player.cpp
+  SpriteSheet.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\SpriteSheet.cpp(25,53): warning C4244: "Argument": Konvertierung von "T" in "float", möglicher Datenverlust
+          with
+          [
+              T=int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\SpriteSheet.cpp(25,36): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+  StateManager.cpp
+  Code wird generiert...
+  Kompilieren...
+  State_Game.cpp
+C:\Users\albch\Documents\GitHub\3w3\3w3\State_Game.cpp(18,28): warning C4244: "Argument": Konvertierung von "T" in "float", möglicher Datenverlust
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\State_Game.cpp(18,21): warning C4244: "Argument": Konvertierung von "T" in "float", möglicher Datenverlust
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\State_Game.cpp(19,34): warning C4244: "Argument": Konvertierung von "T" in "float", möglicher Datenverlust
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\albch\Documents\GitHub\3w3\3w3\State_Game.cpp(19,25): warning C4244: "Argument": Konvertierung von "T" in "float", möglicher Datenverlust
+          with
+          [
+              T=unsigned int
+          ]
+  State_GameOver.cpp
+  State_Intro.cpp
+  State_MainMenu.cpp
+  State_Paused.cpp
+  State_Tool.cpp
+  Window.cpp
+  Code wird generiert...
+  LINK : C:\Users\albch\Documents\GitHub\3w3\3w3\Debug\3w3.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+  3w3.vcxproj -> C:\Users\albch\Documents\GitHub\3w3\3w3\Debug\3w3.exe

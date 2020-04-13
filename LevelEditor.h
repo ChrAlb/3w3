@@ -70,7 +70,7 @@ private:
 	int     TILE_SIZE = 50;
 
 	String     m_tileFile;
-	String     m_LevelFile
+	String     m_LevelFile;
 
 	VertexArray  m_TileArray;
 	VertexArray  m_LevelArray;

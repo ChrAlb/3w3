@@ -215,6 +215,7 @@
     <ClInclude Include="SharedContext.h" />
     <ClInclude Include="SpriteSheet.h" />
     <ClInclude Include="StateManager.h" />
+    <ClInclude Include="State_Editor.h" />
     <ClInclude Include="State_Game.h" />
     <ClInclude Include="State_GameOver.h" />
     <ClInclude Include="State_Intro.h" />
