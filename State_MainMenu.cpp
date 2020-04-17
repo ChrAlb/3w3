@@ -25,7 +25,7 @@ void State_MainMenu::OnCreate() {
 
 	EventManager* eMgr = m_stateMgr->GetContext()->m_eventManager;
 	eMgr->AddCallback(StateType::MainMenu, "MainMenu_Play", &State_MainMenu::Play, this);
-	eMgr->AddCallback(StateType::MainMenu, "MainMenu_LevEdit", &State_MainMenu::LevEdit, this);
+	eMgr->AddCallback(StateType::MainMenu, "MainMenu_Edit", &State_MainMenu::Edit, this);
 	eMgr->AddCallback(StateType::MainMenu, "MainMenu_Quit", &State_MainMenu::Quit, this);
 	
 }
@@ -34,7 +34,7 @@ void State_MainMenu::OnDestroy() {
 	m_stateMgr->GetContext()->m_guiManager->RemoveInterface(StateType::MainMenu, "MainMenu");
 	EventManager* eMgr = m_stateMgr->GetContext()->m_eventManager;
 	eMgr->RemoveCallback(StateType::MainMenu, "MainMenu_Play");
-	eMgr->RemoveCallback(StateType::MainMenu, "MainMenu_LevEdit");
+	eMgr->RemoveCallback(StateType::MainMenu, "MainMenu_Edit");
 	eMgr->RemoveCallback(StateType::MainMenu, "MainMenu_Quit");
 	
 }
@@ -74,9 +74,9 @@ void State_MainMenu::Play(EventDetails* l_details)
 	m_stateMgr->SwitchTo(StateType::Game);
 }
 
-void State_MainMenu::LevEdit(EventDetails* l_details) 
+void State_MainMenu::Edit(EventDetails* l_details) 
 { 
-	m_stateMgr->SwitchTo(StateType::Tool); 
+	m_stateMgr->SwitchTo(StateType::Edit); 
 }
 
 

@@ -99,6 +99,9 @@
     <ClCompile Include="GUI_TextField.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="State_Editor.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Anim_Base.h">
@@ -209,9 +212,6 @@
     <ClInclude Include="FontManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="LevelEditor.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="State_Editor.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -275,6 +275,9 @@
       <Filter>Ressourcendateien</Filter>
     </None>
     <None Include="media\GUI_Styles\TestScrollbar.style">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="media\Maps\editordefault.map">
       <Filter>Ressourcendateien</Filter>
     </None>
   </ItemGroup>

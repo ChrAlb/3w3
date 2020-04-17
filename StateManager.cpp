@@ -9,6 +9,7 @@ StateManager::StateManager(SharedContext* l_shared)
 	RegisterState<State_Paused>(StateType::Paused);
 	RegisterState<State_GameOver>(StateType::GameOver);
 	RegisterState<State_Tool>(StateType::Tool);
+	RegisterState<State_Editor>(StateType::Edit);
 }
 
 StateManager::~StateManager(){
