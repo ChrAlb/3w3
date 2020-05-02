@@ -12,7 +12,7 @@
 enum Sheet{ Tile_Size = 50, Sheet_Width = 400, Sheet_Height = 400 };
 
 using TileID = unsigned int;
-
+ 
 struct TileInfo{
 	TileInfo(SharedContext* l_context, 
 		const std::string& l_texture = "", TileID l_id = 0)
