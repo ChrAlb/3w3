@@ -29,7 +29,7 @@ struct TileInfo{
 			Sheet::Tile_Size,Sheet::Tile_Size);
 		m_sprite.setTextureRect(tileBoundaries);
 	}
-
+	 
 	~TileInfo(){
 		if (m_texture == ""){ return; }
 		m_context->m_textureManager->ReleaseResource(m_texture);
