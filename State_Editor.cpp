@@ -65,6 +65,8 @@ void State_Editor::Draw()
 		GetContext()->m_wind->GetRenderWindow();
 
 	window->setView(m_TileView);
+
+
 	
 }
 
