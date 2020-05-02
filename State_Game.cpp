@@ -75,10 +75,6 @@ void State_Game::Update(const sf::Time& l_time){
 		context->m_wind->GetRenderWindow()->setView(m_view);
 	}
 
-
-
-
-
 	m_gameMap->Update(l_time.asSeconds());
 	m_stateMgr->GetContext()->m_entityManager->Update(l_time.asSeconds());
 }
